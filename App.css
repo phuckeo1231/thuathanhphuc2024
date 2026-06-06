@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: "MiniVan", sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.flash {
+  animation: flash 0.5s;
+}
+
+@keyframes flash {
+  0% { background: #2ecc71; }
+  100% { background: #1a1a1a; }
+}
+
+.alert {
+  padding: 8px;
+  margin-top: 8px;
+  border-radius: 6px;
+}
+
+.alert.low { background: #3498db; }
+.alert.medium { background: #f1c40f; }
+.alert.high { background: #e74c3c; }
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  border-bottom: 1px solid #333;
+  padding: 6px 0;
+}
